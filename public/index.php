@@ -1,5 +1,8 @@
 <?php
 
+$_SERVER['HTTPS'] = 'on';
+$_SERVER['SERVER_PORT'] = 443;
+
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
