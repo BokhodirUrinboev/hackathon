@@ -7,10 +7,13 @@
     "require": {
         "php": "^7.1.3",
         "aws/aws-sdk-php": "^3.72",
+        "aws/aws-sdk-php-laravel": "~3.0",
+        "facebook/graph-sdk": "^5.6",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.7.*",
+        "laravel/passport": "^7.0",
         "laravel/tinker": "^1.0",
-        "aws/aws-sdk-php-laravel": "~3.0"
+        "tcg/voyager": "^1.1"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
