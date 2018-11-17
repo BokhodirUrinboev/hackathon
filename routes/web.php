@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'JSONController@index');
+Route::get('/search', 'JSONController@search');
 
 Auth::routes();
 
