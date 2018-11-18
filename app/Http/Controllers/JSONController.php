@@ -17,15 +17,22 @@ class JSONController extends Controller
     }
     /*public function show($id)
     {
-    	$Client = new Client;
+    	$client = new Client;
     	$res = $client->request('GET', 'https://graph.facebook.com/<?='.$id.'?>/?access_token=1099281806909572|Ap5vqXbUY5-6OvIwsr_eiovbEuk&type=place&fields=name,about,description');
     	return view();
     }*/ 
     public function search(Request $request)
     {
-    	$Client = new Client;
+    	$client = new Client;
     	$res = $client->request('GET', 'https://graph.facebook.com/search?access_token=1099281806909572|Ap5vqXbUY5-6OvIwsr_eiovbEuk&type=place&q='.$request->search);
-    	var_dump(json_decode($res->getBody()));
-    	die;
+    	$res = json_decode($res->getBody())->{'data'};
+	$bigres = array();
+	foreach($res as $r){
+	$res = $client->request('GET', 'https://graph.facebook.com/'.$r->{'id'}.'/?access_token=1099281806909572|Ap5vqXbUY5-6OvIwsr_eiovbEuk&type=place&fields=name,about,description');
+        $res = json_decode($res->getBody());
+	array_push($bigres,$res);
+	}
+    	return view('home')->with('bigres',$bigres);
     }
 }
+

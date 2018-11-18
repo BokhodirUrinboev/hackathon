@@ -13,8 +13,10 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
+			<pre>
+			<?php var_dump($bigres); ?>
+                    	</pre>
+			You are logged in!
                 </div>
             </div>
         </div>
