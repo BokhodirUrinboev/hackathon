@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
-use Aws\S3\S3Client;;
+
 
 class JSONController extends Controller
 {
@@ -35,12 +35,9 @@ class JSONController extends Controller
 		array_push($bigres,$res);
 		}
 
-		$client = new S3Client;
-		$result = $client->detectDominantLanguage([
-		    'Text' => (string)$bigres,
-		]);
+		
 
-    	return view('home')->with('bigres' , ['bigres'=>$bigres,'analysis'=>$result]);
+    	return view('home')->with('bigres',$bigres);
     }
 }
 
