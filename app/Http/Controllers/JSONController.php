@@ -40,7 +40,7 @@ class JSONController extends Controller
 		    'Text' => (string)$bigres,
 		]);
 
-    	return view('home')->with('bigres' => ['bigres'=>$bigres,'analysis'=>$result]);
+    	return view('home')->with('bigres' , ['bigres'=>$bigres,'analysis'=>$result]);
     }
 }
 
