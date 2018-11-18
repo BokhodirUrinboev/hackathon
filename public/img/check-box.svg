@@ -1,0 +1,12 @@
+<svg id="check-box" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.888 36.888">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="check-box-outline">
+    <path id="Path_2" data-name="Path 2" class="cls-1" d="M10.042,14.55,7.173,17.419l9.222,9.222L36.888,6.148,34.019,3.279,16.395,20.9ZM32.79,32.79H4.1V4.1H24.592V0H4.1A4.111,4.111,0,0,0,0,4.1V32.79a4.111,4.111,0,0,0,4.1,4.1H32.79a4.111,4.111,0,0,0,4.1-4.1V16.395h-4.1Z"/>
+  </g>
+</svg>
