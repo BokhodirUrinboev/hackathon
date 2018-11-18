@@ -27,6 +27,9 @@
         <li class="nav-item">
           <a class="btn btn-primary" href="/login">Login</a>
         </li>
+        <li class="nav-item">
+          <a class="btn btn-primary" href="/register">Login</a>
+        </li>
       </ul>
     </div> 
   </div>
